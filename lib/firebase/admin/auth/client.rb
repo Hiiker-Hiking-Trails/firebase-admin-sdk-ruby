@@ -8,7 +8,6 @@ module Firebase
         # @param [Firebase::Admin::App] app The app the client is configured with.
         def initialize(app)
           @project_id = app.project_id
-          @service_account_id = app.service_account_id
           @credentials = app.credentials
 
           @emulated = Utils.is_emulated?
